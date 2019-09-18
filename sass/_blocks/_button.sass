@@ -1,0 +1,45 @@
+.button
+	display: inline-block
+	text-align: center
+	background-color: $accent
+	font-size: 1em
+	font-weight: 200
+	color: #fff
+	padding: 15px 30px
+	border: none
+	flex-flow: $default-font
+	border-radius: 10px
+	transition: .2s
+	&:hover
+		background-color: darken($accent, 10%)
+		cursor: pointer
+
+.burger-button
+	display: none
+	width: 25px
+	flex-direction: column
+	align-items: flex-end
+	justify-content: center
+	position: relative
+	span
+		background-color: #000
+		height: 2px
+		border-radius: 4px
+		width: 50%
+		transition: .4s
+		&:last-child
+			width: 100%
+			margin-top: 3px
+	&.active
+		justify-content: center
+		align-items: center
+		span
+			width: 20px
+			transform: rotate(45deg)
+			transform-origin: center
+			position: absolute
+			top: 50%
+			&:last-child
+				transform: rotate(-45deg)
+				top: 50%
+				margin-top: 0

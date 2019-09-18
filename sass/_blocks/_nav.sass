@@ -1,0 +1,19 @@
+.nav
+	&__list
+		list-style: none
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: center
+	&__item
+		margin-right: 70px
+		&:last-child
+			margin-right: 0
+	&__link
+		color: $accent
+		text-decoration: none
+		transition: .2s color
+		font-weight: 200
+		font-size: $_14px
+		&.active, &:hover
+			color: $text-c

@@ -1,0 +1,108 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+
+// ≥992px
+
+// ≥768px
+
+// ≥576px
+@media (max-width: 576px)
+	.page
+		font-size: 14px
+		padding-top: 67px
+	.nav__item
+		margin-right: 0
+	.experience__col
+		width: 100%
+
+	.header
+		&__mini-container
+			align-items: center
+			justify-content: flex-end
+			text-align: right
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+		&--opened
+			.nav
+				transform: translateY(0)
+			.burger-button
+				justify-content: center
+				align-items: center
+				span
+					width: 20px
+					transform: rotate(45deg)
+					transform-origin: center
+					position: absolute
+					top: 50%
+					&:last-child
+						transform: rotate(-45deg)
+						top: 50%
+						margin-top: 0
+
+	.burger-button
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+
+	.javascript-experience__range-scale span
+		font-size: 9px
+		line-height: 1.4
+		&:nth-child(2)
+			padding-right: 20px
+		&:nth-child(3)
+			padding-right: 0
+
+	.nav
+		position: fixed
+		transition: .4s
+		transform: translateY(-200%)
+		top: 60px
+		bottom: 0
+		left: 0
+		right: 0
+		background-color: #fff
+		&__list
+			padding-top: 20px
+			flex-direction: column
+		&__link
+			font-size: $_24px
+	
+	.self-info
+		padding-top: 25px
+		padding-bottom: 25px
+		&__select
+			max-width: 100%
+
+	.experience
+		padding-top: 25px
+		padding-bottom: 25px
+	
+	.js
+		padding-top: 25px
+		padding-bottom: 0
+		.mini-container
+			padding-left: 15px
+			padding-right: 15px
+		&__title
+			text-align: center
+
+	.input
+		font-size: 1em
+		padding: 10px
+
+	.castom-range--color
+		height: 30px
+		background-size: 100%
+		background-position: center
+	.castom-range
+		background-size: 100%
+		background-position: center

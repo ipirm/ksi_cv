@@ -1,0 +1,61 @@
+.input
+	font-size: $_24px
+	text-align: center
+	border: 1px solid #E6E6E6
+	border-radius: 5px
+	padding: 15px
+	margin-top: 12.5px
+	margin-bottom: 12.5px
+	width: 100%
+	transition: .2s
+	&--select
+		// color: #c8c8c8
+	&--textarea
+		text-align: left
+		resize: none
+		height: 180px
+	&:focus
+		border-color: $accent
+		outline: none
+
+
+.checkbox-wrapper
+	cursor: pointer
+	.checkbox
+		opacity: 0
+		width: 0
+		height: 0
+		visibility: hidden
+	span
+		position: relative
+		padding-left: 30px
+		display: flex
+		align-items: center
+		&::after
+			content: ''
+			position: absolute
+			width: 20px
+			height: 20px
+			border: 1px solid $accent
+			border-radius: 2px
+			left: 0
+			transition: .2s
+		&::before
+			content: ''
+			position: absolute
+			height: 15px
+			width: 5px
+			border-right: 2px solid #fff
+			border-bottom: 2px solid #fff
+			left: 7.5px
+			top: 1.5px
+			z-index: 1
+			transform-origin: center
+			transform: rotate(45deg)
+			opacity: 0
+			transition: .2s
+	.checkbox:checked ~ span
+		&::after
+			background-color: $accent
+		&::before
+			opacity: 1

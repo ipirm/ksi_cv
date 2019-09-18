@@ -1,0 +1,84 @@
+/*--------castom Range-----------------*/
+.castom-range__wrapper 
+	width: 100%
+	max-width: 794px
+	margin-left: auto
+	margin-right: auto
+	overflow: hidden
+
+.castom-range 
+	height: 25px
+	max-width: 770px
+	background: url('../img/gray-range.png') left no-repeat
+	margin-left: 12px
+	&__line
+		height: 100px
+		background: transparent
+		transform: translateY(-40px)
+
+input[type="range"] 
+	-webkit-appearance: none
+	width: 100%
+	outline: none
+	border: none
+	outline: none
+
+input[type="range"]::-webkit-slider-thumb 
+	-webkit-appearance: none
+	margin-top: 6px
+	height: 26px
+	width: 23px
+	cursor: pointer
+	border: none
+	outline: none
+	background: url('../img/slider.png') no-repeat
+
+/*---------------mozilla-------------*/
+input[type="range"]::-moz-range-track 
+	-moz-appearance: none
+	width: 100%
+	outline: none
+	background: white
+	border: none
+	outline: none
+
+input[type="range"]::-moz-range-thumb 
+	-moz-appearance: none
+	margin-top: 6px
+	height: 26px
+	cursor: pointer
+	width: 23px
+	border: none
+	outline: none
+	background: url('../img/slider.png') no-repeat
+	border: none
+
+/*----------------------------------------*/
+.castom-range--color 
+	height: 25px
+	overflow: hidden
+	background: url('../img/color-range.png') 0px 10px no-repeat
+
+.javascript-experience__range-scale
+	display: flex
+	-webkit-box-align: end
+	-ms-flex-align: end
+	align-items: flex-end
+	width: 100%
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 4px
+	span
+		line-height: 19px
+		font-size: 13px
+		&:nth-child(1)
+			flex-basis: 24%
+		&:nth-child(2)
+			flex-basis: 25.6%
+			padding-right: 60px
+		&:nth-child(3)
+			flex-basis: 30%
+			padding-right: 45px
+		&:nth-child(4)
+			flex-grow: 1
+			text-align: right
